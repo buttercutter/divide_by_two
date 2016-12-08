@@ -1,0 +1,73 @@
+v 20130925 2
+C 40000 40000 0 0 0 title-B.sym
+C 46800 46400 1 0 0 INV1-1.sym
+{
+T 47200 47000 5 10 1 1 0 0 1
+refdes=X1
+T 47600 48100 5 10 0 1 0 0 1
+device=INV1
+T 47600 47900 5 10 0 0 0 0 1
+model-name=INV1
+T 47600 47100 5 10 0 0 0 0 1
+symversion=1.0
+T 47600 46400 5 10 0 0 0 0 1
+footprint=none
+}
+C 45700 45000 1 0 0 vpulse-1.sym
+{
+T 46400 45650 5 10 1 1 0 0 1
+refdes=V1
+T 46400 45850 5 10 0 0 0 0 1
+device=vpulse
+T 46400 46050 5 10 0 0 0 0 1
+footprint=none
+T 46400 45450 5 10 1 1 0 0 1
+value=pulse 0 Vdd 10n 1n 1n 1u 2u
+}
+C 45900 44700 1 0 0 gnd-1.sym
+N 46800 46700 46000 46700 4
+{
+T 46800 46700 5 10 0 1 0 0 1
+netname=IN
+}
+N 46000 46700 46000 46200 4
+N 48200 46700 47900 46700 4
+{
+T 48200 46700 5 10 0 0 0 0 1
+netname=OUT
+}
+C 42300 47200 1 0 0 spice-directive-1.sym
+{
+T 42400 47500 5 10 0 1 0 0 1
+device=directive
+T 42400 47600 5 10 1 1 0 0 1
+refdes=A2
+T 42300 47200 5 10 1 1 0 0 1
+value=.GLOBAL Vdd Vss
+}
+C 41500 44700 1 0 0 vdc-1.sym
+{
+T 42200 45350 5 10 1 1 0 0 1
+refdes=Vd
+T 42200 45550 5 10 0 0 0 0 1
+device=VOLTAGE_SOURCE
+T 42200 45750 5 10 0 0 0 0 1
+footprint=none
+T 42200 45150 5 10 1 1 0 0 1
+value=DC 1.2V
+}
+C 41700 44400 1 0 0 gnd-1.sym
+C 41600 45900 1 0 0 vdd-1.sym
+C 43800 45900 1 0 0 vss-1.sym
+C 43700 44700 1 0 0 vdc-1.sym
+{
+T 44400 45350 5 10 1 1 0 0 1
+refdes=Vs
+T 44400 45550 5 10 0 0 0 0 1
+device=VOLTAGE_SOURCE
+T 44400 45750 5 10 0 0 0 0 1
+footprint=none
+T 44400 45150 5 10 1 1 0 0 1
+value=DC 0V
+}
+C 43900 44400 1 0 0 gnd-1.sym

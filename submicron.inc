@@ -55,9 +55,10 @@
 *
 
 ***************************************************
+*http://research.kek.jp/people/ikeda/openIP/openIP_3.pdf
 ***** digital inverter ****************************
 
-.SUBCKT inv1P A Y
-M1 Y A VSS1 VSS nch L=1.2u W=3.u M=1
-M2 Y A VDD1 VDD1 pch L=0.4u W=3.u M=1
+.SUBCKT inv1 A Y
+M1 Y A 0 0 nch L=1.2u W=3u M=1
+M2 Y A 1.2 1.2 pch L=0.4u W=3u M=1
 .ENDS
