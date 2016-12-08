@@ -1,1 +1,1 @@
-.tran 0.1ns 5ns uic
+.tran 1ps 600ps

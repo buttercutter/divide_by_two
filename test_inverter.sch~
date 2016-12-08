@@ -125,14 +125,8 @@ refdes=A6
 T 41500 41400 5 10 1 1 0 0 1
 value=.option post
 }
-T 49400 41600 9 10 1 0 0 0 10
+T 49400 41700 9 10 1 0 0 0 4
 gtkwave can not be used to view the raw file from ngspice.
 gwave can view the file
 gaw can also view (the format is spice3raw)
 http://www.rvq.fr/linux/gaw.php
-
-execute the following command to get netlist:
-make netlist -f Makefile
-
-execute the following command to simulate:
-make sim -f Makefile

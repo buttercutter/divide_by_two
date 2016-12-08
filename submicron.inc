@@ -59,6 +59,6 @@
 ***** digital inverter ****************************
 
 .SUBCKT inv1 A Y
-M1 Y A 0 0 nch L=1.2u W=3u M=1
-M2 Y A 1.2 1.2 pch L=0.4u W=3u M=1
+M1 Y A Vss Vss nch L=1.2u W=3u M=1
+M2 Y A Vdd Vdd pch L=0.4u W=3u M=1
 .ENDS
